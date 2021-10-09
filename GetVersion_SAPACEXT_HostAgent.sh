@@ -1,6 +1,9 @@
 #!/bin/bash
-# This script is created to check version of SAPACEXT and hostagent
-# date - 6th Feb 2020, author - priyanka patil
+# Checks the version of SAPACEXT and Host agent on multiple hosts if you do not have root access and access to SAP LAMA, or any centralized monitoring tool
+# Prerequisite - 
+# 1. Ensure you have SSH enabled and have proper authorizations.
+# 2. Add hostnames in HOSTS.txt, ensure each entry is on a new line.
+# 3. pwd.txt contains your password. Please note that after deploying keys, modify the snippet as SSH command will not ask for your password.
 
 host_list= <path>/HOSTS.txt
 pwd=<path>/pwd.txt
